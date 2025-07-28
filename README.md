@@ -1,5 +1,5 @@
 # Neovim derivation built with a nix-flake for elite portability
-Heavily **inspired** by https://github.com/nix-community/kickstart-nix.nvim
+**Heavily inspired** by https://github.com/nix-community/kickstart-nix.nvim
 
 ## Usage ##
 Try it out!
