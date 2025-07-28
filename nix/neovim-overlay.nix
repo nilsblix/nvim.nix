@@ -61,6 +61,9 @@ in {
     nvim-pkg = mkNeovim {
         plugins = all-plugins;
         extraPackages = basePackages ++ extraPackages;
+        appName = "nvim";
+        viAlias = false;
+        vimAlias = true;
     };
 
     # This is meant to be used within a devshell.
