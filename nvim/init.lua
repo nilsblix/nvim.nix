@@ -32,7 +32,6 @@ cmd.packadd('cfilter') -- Allows filtering the quickfix list with :cfdo
 
 local keymap = vim.keymap
 keymap.set("n", "<leader>p", "<C-^>")
-keymap.set("n", "<leader>n", ":Ex<CR>")
 keymap.set("n", "<leader>ya", "mzggyG`z")
 keymap.set("n", "<C-c>", ":cnext<CR>")
 keymap.set("n", "<C-k>", ":cprev<CR>")
@@ -73,6 +72,14 @@ end
 
 cmd("set notermguicolors") -- Used to make sonokai more appealing
 cmd("colorscheme sonokai")
+
+-- <=============== Oil ===============>
+require("oil").setup({
+    view_options = {
+        show_hidden = true,
+    },
+})
+keymap.set("n", "<leader>n", ":Oil<CR>")
 
 -- <=============== Blink ===============>
 local blink = require("blink.cmp")

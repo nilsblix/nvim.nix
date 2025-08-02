@@ -39,6 +39,8 @@ with final.pkgs.lib; let
         nvim-treesitter.withAllGrammars
         nvim-lspconfig
         blink-cmp
+        nvim-web-devicons
+        oil-nvim
     ];
 
     basePackages = with pkgs; [
