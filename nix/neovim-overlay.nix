@@ -37,6 +37,7 @@ with final.pkgs.lib; let
         harpoon2
         plenary-nvim
         nvim-treesitter.withAllGrammars
+        nvim-treesitter-context
         nvim-lspconfig
         blink-cmp
     ];
