@@ -39,7 +39,6 @@ with final.pkgs.lib; let
         nvim-treesitter.withAllGrammars
         nvim-lspconfig
         blink-cmp
-        nord-nvim
     ];
 
     basePackages = with pkgs; [
