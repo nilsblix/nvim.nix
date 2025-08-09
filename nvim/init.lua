@@ -193,44 +193,46 @@ keymap.set("n", "<leader>sf", telescope_builtin.find_files)
 keymap.set("n", "<leader>sg", telescope_builtin.live_grep)
 keymap.set("n", "<leader>sd", telescope_builtin.diagnostics)
 
-local telescope = require("telescope")
-local fb_actions = require "telescope._extensions.file_browser.actions"
-telescope.setup({
-    extensions = {
-        file_browser = {
-            path = "%:p:h",
-            cwd = vim.loop.cwd(),
-            hijack_netrw = true,
-            previewer = false,
-            respect_gitignore = false,
-            no_ignore = true,
-            git_status = false,
-            follow_symlinks = true,
-            hide_parent_dir = true,
-            mappings = {
-                ["n"] = {
-                    ["%"] = fb_actions.create,
-                    ["R"] = fb_actions.rename,
-                    ["m"] = fb_actions.move,
-                    ["y"] = fb_actions.copy,
-                    ["D"] = fb_actions.remove,
-                    ["o"] = fb_actions.open,
-                    ["-"] = fb_actions.goto_parent_dir,
-                    ["e"] = fb_actions.goto_home_dir,
-                    ["w"] = fb_actions.goto_cwd,
-                    ["t"] = fb_actions.change_cwd,
-                    ["f"] = fb_actions.toggle_browser,
-                    ["h"] = fb_actions.toggle_hidden,
-                    ["s"] = fb_actions.toggle_all,
-                },
-            },
-        },
-    },
-})
+keymap.set("n", "<leader>n", ":Ex<CR>", { silent = true })
 
-keymap.set("n", "<leader>n", function()
-    telescope.extensions.file_browser.file_browser({
-        initial_mode = "normal",
-    })
-end)
-telescope.load_extension("file_browser")
+-- local telescope = require("telescope")
+-- local fb_actions = require "telescope._extensions.file_browser.actions"
+-- telescope.setup({
+--     extensions = {
+--         file_browser = {
+--             path = "%:p:h",
+--             cwd = vim.loop.cwd(),
+--             hijack_netrw = true,
+--             previewer = false,
+--             respect_gitignore = false,
+--             no_ignore = true,
+--             git_status = false,
+--             follow_symlinks = true,
+--             hide_parent_dir = true,
+--             mappings = {
+--                 ["n"] = {
+--                     ["%"] = fb_actions.create,
+--                     ["R"] = fb_actions.rename,
+--                     ["m"] = fb_actions.move,
+--                     ["y"] = fb_actions.copy,
+--                     ["D"] = fb_actions.remove,
+--                     ["o"] = fb_actions.open,
+--                     ["-"] = fb_actions.goto_parent_dir,
+--                     ["e"] = fb_actions.goto_home_dir,
+--                     ["w"] = fb_actions.goto_cwd,
+--                     ["t"] = fb_actions.change_cwd,
+--                     ["f"] = fb_actions.toggle_browser,
+--                     ["h"] = fb_actions.toggle_hidden,
+--                     ["s"] = fb_actions.toggle_all,
+--                 },
+--             },
+--         },
+--     },
+-- })
+--
+-- keymap.set("n", "<leader>n", function()
+--     telescope.extensions.file_browser.file_browser({
+--         initial_mode = "normal",
+--     })
+-- end)
+-- telescope.load_extension("file_browser")

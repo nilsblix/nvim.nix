@@ -34,7 +34,7 @@ with final.pkgs.lib; let
         vim-trailing-whitespace
         sonokai
         telescope-nvim
-        telescope-file-browser-nvim
+        # telescope-file-browser-nvim
         harpoon2
         plenary-nvim
         nvim-treesitter.withAllGrammars
