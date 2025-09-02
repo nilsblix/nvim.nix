@@ -53,6 +53,8 @@ with final.pkgs.lib; let
         typescript-language-server
         rust-analyzer
         yaml-language-server
+        basedpyright
+        # python313Packages.jedi-language-server
     ];
 in {
     # This is the neovim derivation

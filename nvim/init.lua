@@ -132,7 +132,8 @@ local servers = {
     "zls",
     "ts_ls",
     "nixd",
-    "yamlls"
+    "yamlls",
+    "basedpyright",
 }
 
 for _, server in ipairs(servers) do
