@@ -3,13 +3,6 @@
 with final.pkgs.lib; let
     pkgs = final;
 
-    # Use this to create a plugin from a flake input
-    mkNvimPlugin = src: pname:
-        pkgs.vimUtils.buildVimPlugin {
-            inherit pname src;
-            version = src.lastModifiedDate;
-        };
-
     # Make sure we use the pinned nixpkgs instance for wrapNeovimUnstable,
     # otherwise it could have an incompatible signature when applying this overlay.
     pkgs-locked = inputs.nixpkgs.legacyPackages.${pkgs.system};
@@ -33,6 +26,7 @@ with final.pkgs.lib; let
         vim-surround
         vim-trailing-whitespace
         sonokai
+        vscode-nvim
         telescope-nvim
         harpoon2
         plenary-nvim
