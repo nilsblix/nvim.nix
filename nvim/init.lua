@@ -72,8 +72,10 @@ function B(bg)
     cmd("hi! LineNr guibg=" .. bg)
 end
 
-cmd("colorscheme gruvbox-material")
-cmd("hi Normal guibg=black")
+cmd("set notermguicolors") -- Make sonokai better looking imo.
+cmd("colorscheme sonokai")
+-- cmd("colorscheme gruvbox-material")
+-- cmd("hi Normal guibg=black")
 
 -- <=============== Blink ===============>
 local blink = require("blink.cmp")
