@@ -27,6 +27,7 @@ with final.pkgs.lib; let
         vim-trailing-whitespace
         sonokai
         vscode-nvim
+        gruvbox-material-nvim
         telescope-nvim
         harpoon2
         plenary-nvim
