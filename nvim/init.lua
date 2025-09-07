@@ -10,6 +10,7 @@ opt.hlsearch = true
 opt.guicursor = "n-v-i-c:block-Cursor"
 vim.cmd("let g:netrw_banner=0")
 
+opt.title = true
 opt.expandtab = true
 opt.tabstop = 4
 opt.softtabstop = 4
