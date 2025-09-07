@@ -119,6 +119,8 @@ require("nvim-treesitter.configs").setup({
 })
 
 -- <=============== Lsp ===============>
+require("fidget").setup({})
+
 local border_opt = "single"
 
 vim.diagnostic.config({

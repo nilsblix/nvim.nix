@@ -27,14 +27,13 @@ with final.pkgs.lib; let
         vim-trailing-whitespace
         sonokai
         vscode-nvim
-        # Most similar to the image. Just with blue variables :(.
-        gruvbox-material-nvim
         telescope-nvim
         harpoon2
         plenary-nvim
         nvim-treesitter.withAllGrammars
         nvim-lspconfig
         blink-cmp
+        fidget-nvim
     ];
 
     basePackages = with pkgs; [
