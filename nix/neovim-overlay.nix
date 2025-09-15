@@ -59,7 +59,7 @@ in {
         extraPackages = basePackages ++ extraPackages;
         appName = "nvim";
         viAlias = false;
-        vimAlias = true;
+        vimAlias = false;
     };
 
     # This is meant to be used within a devshell.
