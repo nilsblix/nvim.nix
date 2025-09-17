@@ -73,10 +73,10 @@ function B(bg)
     cmd("hi! LineNr guibg=" .. bg)
 end
 
-cmd("colo github_dark_default")
-cmd("hi StatusLine guibg=#282838 guifg=#a2a2a2")
--- cmd("set notermguicolors") -- Make sonokai better looking imo.
--- cmd("colorscheme sonokai")
+-- cmd("colo github_dark_default")
+-- cmd("hi StatusLine guibg=#282838 guifg=#a2a2a2")
+cmd("set notermguicolors") -- Make sonokai better looking imo.
+cmd("colorscheme sonokai")
 -- Similar to OCAML-demo video editor.
 -- cmd("colorscheme gruvbox-material")
 -- B("black")
