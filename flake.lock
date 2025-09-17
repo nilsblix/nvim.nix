@@ -97,6 +97,22 @@
         "type": "github"
       }
     },
+    "github-theme": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1735641120,
+        "narHash": "sha256-/A4hkKTzjzeoR1SuwwklraAyI8oMkhxrwBBV9xb59PA=",
+        "owner": "projekt0n",
+        "repo": "github-nvim-theme",
+        "rev": "c106c9472154d6b2c74b74565616b877ae8ed31d",
+        "type": "github"
+      },
+      "original": {
+        "owner": "projekt0n",
+        "repo": "github-nvim-theme",
+        "type": "github"
+      }
+    },
     "gitignore": {
       "inputs": {
         "nixpkgs": [
@@ -199,6 +215,7 @@
       "inputs": {
         "flake-utils": "flake-utils",
         "gen-luarc": "gen-luarc",
+        "github-theme": "github-theme",
         "nixpkgs": "nixpkgs_2"
       }
     },

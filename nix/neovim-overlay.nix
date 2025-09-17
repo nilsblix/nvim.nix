@@ -3,6 +3,12 @@
 with final.pkgs.lib; let
     pkgs = final;
 
+    mkNvimPlugin = src: pname:
+        pkgs.vimUtils.buildVimPlugin {
+          inherit pname src;
+          version = src.lastModifiedDate;
+        };
+
     # Make sure we use the pinned nixpkgs instance for wrapNeovimUnstable,
     # otherwise it could have an incompatible signature when applying this overlay.
     pkgs-locked = inputs.nixpkgs.legacyPackages.${pkgs.system};
@@ -27,6 +33,7 @@ with final.pkgs.lib; let
         vim-trailing-whitespace
         sonokai
         vscode-nvim
+        (mkNvimPlugin inputs.github-theme "github-theme")
         telescope-nvim
         harpoon2
         plenary-nvim
