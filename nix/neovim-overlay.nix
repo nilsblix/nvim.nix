@@ -57,7 +57,7 @@ with final.pkgs.lib; let
         yaml-language-server
         basedpyright
         ocamlPackages.ocaml-lsp
-        ocamlPackages.ocamlformat-rpc-lib
+        ocamlPackages.ocamlformat
         # python313Packages.jedi-language-server
     ];
 in {
