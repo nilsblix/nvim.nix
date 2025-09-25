@@ -56,6 +56,7 @@ with final.pkgs.lib; let
         rust-analyzer
         yaml-language-server
         basedpyright
+        ocamlPackages.ocaml-lsp
         # python313Packages.jedi-language-server
     ];
 in {

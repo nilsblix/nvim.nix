@@ -143,6 +143,7 @@ local servers = {
     "nixd",
     "yamlls",
     "basedpyright",
+    "ocamllsp",
 }
 
 for _, server in ipairs(servers) do
