@@ -94,7 +94,8 @@ blink.setup({
             draw = {
                 columns = { { "label", "kind", gap = 1 }, { "label_description" } },
             }
-        }
+        },
+        documentation = { auto_show = true, auto_show_delay = 500 },
     }
 })
 
