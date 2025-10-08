@@ -1,5 +1,21 @@
 {
   "nodes": {
+    "cobalt-nvim": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1759783393,
+        "narHash": "sha256-7q/hnlpkhtFmP0a9mRmVYntsC+yx+hp1phneRjcTfeM=",
+        "owner": "wurli",
+        "repo": "cobalt.nvim",
+        "rev": "ba4205d5bd44c8e0e55ee9958895e360e10b21c8",
+        "type": "github"
+      },
+      "original": {
+        "owner": "wurli",
+        "repo": "cobalt.nvim",
+        "type": "github"
+      }
+    },
     "flake-compat": {
       "flake": false,
       "locked": {
@@ -213,6 +229,7 @@
     },
     "root": {
       "inputs": {
+        "cobalt-nvim": "cobalt-nvim",
         "flake-utils": "flake-utils",
         "gen-luarc": "gen-luarc",
         "github-theme": "github-theme",

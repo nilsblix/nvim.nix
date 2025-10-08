@@ -34,7 +34,10 @@ with final.pkgs.lib; let
         sonokai
         vscode-nvim
         (mkNvimPlugin inputs.github-theme "github-theme")
+        (mkNvimPlugin inputs.cobalt-nvim "cobalt")
         nightfox-nvim
+        nvim-web-devicons
+        nvim-tree-lua
         telescope-nvim
         harpoon2
         plenary-nvim

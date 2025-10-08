@@ -35,7 +35,6 @@ cmd.packadd('cfilter') -- Allows filtering the quickfix list with :cfdo
 local keymap = vim.keymap
 keymap.set("n", "<leader>p", "<C-^>")
 keymap.set("n", "<leader>ya", "mzggyG`z")
-keymap.set("n", "<leader>n", ":Ex<CR>", { silent = true })
 keymap.set("n", "<C-c>", ":cnext<CR>")
 keymap.set("n", "<C-k>", ":cprev<CR>")
 keymap.set("n", "<Esc>", ":nohlsearch<CR>", { silent = true })
@@ -201,7 +200,23 @@ vim.api.nvim_create_autocmd("LspAttach", {
     end,
 })
 
+require("telescope").setup({
+    defaults = {
+        disable_devicons = true,
+    },
+})
 local telescope_builtin = require("telescope.builtin")
 keymap.set("n", "<leader>sf", telescope_builtin.find_files)
 keymap.set("n", "<leader>sg", telescope_builtin.live_grep)
 keymap.set("n", "<leader>sd", telescope_builtin.diagnostics)
+
+-- <=============== NvimTree ===============>
+require("nvim-tree").setup({
+    actions = {
+        open_file = {
+            quit_on_open = true,
+        },
+    },
+})
+
+keymap.set("n", "<leader>n", ":NvimTreeFindFile<CR>")
