@@ -4,13 +4,13 @@
 ## Usage ##
 Try it out!
 ```bash
-nix run "github:nilsblix/nvim.nix"
+nix run "github:nilsblix/neovim.nix"
 ```
 
 Or use it in a flake
 ```nix
 nvim = {
-    url = "github:nilsblix/nvim.nix"
+    url = "github:nilsblix/neovim.nix"
 }
 ...
 pkgs = import nixpkgs {
