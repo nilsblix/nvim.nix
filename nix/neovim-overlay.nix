@@ -31,11 +31,14 @@ with final.pkgs.lib; let
         # https://search.nixos.org/packages?channel=unstable&from=0&size=50&sort=relevance&type=packages&query=vimPlugins
         vim-surround
         vim-trailing-whitespace
+        # Colorschemes
         sonokai
         vscode-nvim
-        (mkNvimPlugin inputs.github-theme "github-theme")
         (mkNvimPlugin inputs.cobalt-nvim "cobalt")
         nightfox-nvim
+        rose-pine
+        catppuccin-nvim
+
         nvim-web-devicons
         nvim-tree-lua
         telescope-nvim
