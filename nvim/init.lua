@@ -99,20 +99,6 @@ blink.setup({
     }
 })
 
--- <=============== Harpoon ===============>
-local harpoon = require("harpoon")
-harpoon:setup()
-
-local list = harpoon:list()
-
-for i = 1, 4 do
-    local key = "<leader>" .. tostring(i)
-    keymap.set("n", key, function() list:select(i) end, { noremap = true, silent = true })
-end
-
-keymap.set("n", "<leader><leader>", function() harpoon.ui:toggle_quick_menu(list) end)
-keymap.set("n", "<leader>a", function() list:add() end)
-
 -- <=============== Treesitter ===============>
 require("nvim-treesitter.configs").setup({
     ensure_installed = {},

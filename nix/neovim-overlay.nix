@@ -42,7 +42,6 @@ with final.pkgs.lib; let
         nvim-web-devicons
         nvim-tree-lua
         telescope-nvim
-        harpoon2
         plenary-nvim
         nvim-treesitter.withAllGrammars
         nvim-lspconfig
